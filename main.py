@@ -20,6 +20,8 @@ def main():
     args = read_cli_args()
 
     interface: Interface = read_layout_config(args.config)
+        
+    # Принтилка результата парсинга текущего конфига
     print('interface:', interface)
     print('i.width, i.height, i.pos:',interface.width, interface.height, interface.position)
     print('group.label.text:', interface.children[0].children[0].text)
@@ -28,7 +30,7 @@ def main():
     print('text2.text:', interface.children[3].text)
 
     # layed_out_interface: Interface = autolayout(interface)
-    # generate_html_layout(layed_out_interface, args["output"])
+    # generate_html_layout(layed_out_interface, args.output)
 
 
 if __name__ == '__main__':
