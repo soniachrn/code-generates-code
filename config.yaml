@@ -1,0 +1,17 @@
+interface:
+  width: 600
+  height: 400
+  children:
+    - group:
+        children:
+          - label:
+              text: Your name
+          - textfield
+          - button:
+              text: Greet
+    - image:
+        url: "my.image/url"
+    - text:
+        text: "Nice image huh?"
+    - text
+
