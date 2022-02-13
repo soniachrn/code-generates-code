@@ -27,8 +27,8 @@ def main():
     print('text.text:', interface.children[2].text)
     print('text2.text:', interface.children[3].text)
 
-    # layout: Interface = autolayout(config)
-    # generate_html_layout(layout, args["output"])
+    # layed_out_interface: Interface = autolayout(interface)
+    # generate_html_layout(layed_out_interface, args["output"])
 
 
 if __name__ == '__main__':
