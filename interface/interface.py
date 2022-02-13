@@ -17,11 +17,22 @@ class Position(Enum):
     CENTER = 9
 
 
+class Coordination:
+    def __init__(self, top, right):
+        self.top = top
+        self.right = right
+
+
 class Node:
     def __init__(self, yaml_node):
         self.width = yaml_node.get('width', None)
         self.height = yaml_node.get('height', None)
         self.position = self._get_position(yaml_node.get('position', None))
+        self.color = self._get_color(yaml_node.get('color', None))
+        self.coordination = None
+
+    def _get_color(self, color):
+        return color if color else 'black'
 
     def _get_position(self, position_str):
         positions = {
