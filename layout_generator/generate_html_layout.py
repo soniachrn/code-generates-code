@@ -1,5 +1,6 @@
-
 # Generate an html file by the given layout
+from interface import *
+
 
 class HTMLGenerator:
     def __init__(self):
@@ -82,36 +83,38 @@ class HTMLGenerator:
         self.styles.append(style)
         self.bodies.append(body)
 
-    def print_styles(self):
+    def print_styles(self, out):
         for style in self.styles:
-            print(style)
+            out.write(style)
 
-    def print_bodies(self):
+    def print_bodies(self, out):
         for body in self.bodies:
-            print(body)
+            out.write(body)
 
 
 def generate_html_layout(layout, output_file_path: str):
+    out = open(output_file_path, 'a')
+
     generator = HTMLGenerator()
     generator.generate(layout)
-    print('''
+    out.write('''
         <!DOCTYPE html>
         <html>
         <head>
         <style>
     ''')
 
-    generator.print_styles()
+    generator.print_styles(out)
 
-    print('''
+    out.write('''
         </style>
         </head>
         <body>
     ''')
 
-    generator.print_bodies()
+    generator.print_bodies(out)
 
-    print('''
+    out.write('''
         </body>
         </html>
     ''')
