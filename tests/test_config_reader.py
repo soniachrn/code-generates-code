@@ -3,7 +3,7 @@ import pytest
 from config_reader import *
 
 def test_read():
-    f = open('test_config_simple.yaml')
+    f = open('data/test_config_simple.yaml')
 
     interface = read_layout_config(f)
     assert len(interface.children) == 3
