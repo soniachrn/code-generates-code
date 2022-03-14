@@ -3,7 +3,7 @@ import pytest
 from config_reader import *
 
 def test_read():
-    f = open('test_config.yaml')
+    f = open('test_config_simple.yaml')
 
     interface = read_layout_config(f)
     assert len(interface.children) == 3
@@ -15,3 +15,4 @@ def test_read():
     assert interface.children[1].image.url == "my.image/url"
 
     assert interface.children[2].text == "Nice image huh?"
+

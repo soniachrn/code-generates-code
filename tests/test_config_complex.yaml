@@ -1,0 +1,71 @@
+interface:
+  width: 600
+  height: 1000
+  children:
+
+    # Top menu
+    - group:
+        position: top
+        children:
+          - text:
+              text: About
+          - text:
+              text: Accesibility
+          - text:
+              text: User Agreement
+          - text:
+              text: Privacy Policy
+          - text:
+              text: Cookie Policy
+
+    # Sidebar
+    - group:
+        position: left
+        children:
+          - text:
+              text: Contents
+          - text:
+              text: Current events
+          - text:
+              text: Random article
+          - text:
+              text: About wikipedia
+
+    # Body
+    - group:
+        position: center
+        children:
+          
+          # Today's featured article
+          - group:
+              position: upper left
+              children:
+                - text:
+                    text: Today's featured article
+                - text
+
+          # In the news
+          - group:
+              position: upper right
+              children:
+                - text:
+                    text: In the news
+                - text
+
+          # Image
+          - image:
+              position: bottom
+
+    # Contacts
+    - group:
+        position: bottom
+        children:
+          - text:
+              text: instagram
+          - text:
+              text: twitter
+          - text:
+              text: facebook
+          - text:
+              text: email
+
