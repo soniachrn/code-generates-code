@@ -1,6 +1,6 @@
 # Generate an html file by the given layout
-from interface.interface import *
-from autolayout.autolayout import OBJ_EXPENSES
+from interface import *
+from autolayout import OBJ_EXPENSES
 
 class HTMLGenerator:
     def __init__(self):

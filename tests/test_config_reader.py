@@ -1,9 +1,9 @@
 import pytest
 
-from config_reader import *
+from config_reader import read_layout_config
 
 def test_read():
-    f = open('data/test_config_simple.yaml')
+    f = 'tests/data/test_config_simple.yaml'
 
     interface = read_layout_config(f)
     assert len(interface.children) == 3

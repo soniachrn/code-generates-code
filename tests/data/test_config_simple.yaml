@@ -4,11 +4,11 @@ interface:
   children:
     - group:
         children:
-          - label
+          - label:
               text: Your name
-          - textfield
+          - textfield:
               text: John
-          - button
+          - button:
               text: Green
     - image:
         url: "my.image/url"

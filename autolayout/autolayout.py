@@ -1,6 +1,6 @@
 
 # Fill layout coordinates etc.
-from interface.interface import *
+from interface import *
 
 DOWN_SHIFT_PERCENTAGE = 3
 OBJ_EXPENSES = 4

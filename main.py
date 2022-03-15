@@ -1,25 +1,25 @@
-# coding=utf-8
-# This is a sample Python script.
+import argparse
 
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
-
-import layout_generator.generate_html_layout as gen
-import config_reader.config_reader as cr
-import autolayout.autolayout as al
+from autolayout import autolayout
+from config_reader import read_layout_config
+from layout_generator import generate_html_layout
 
 
+def read_cli_args():
+     parser = argparse.ArgumentParser(description='Code generates code')
+     parser.add_argument('--config', help='Configuration file path', required=True)
+     parser.add_argument('--output', help='HTML output file', default='layout.html')
+     return parser.parse_args()
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print("Hi, {0}".format(name))  # Press ⌘F8 to toggle the breakpoint.
+
+def main():
+    args = read_cli_args()
+
+    layout = read_layout_config(args.config)
+    autolayout(layout)
+    generate_html_layout(layout, args.output)
 
 
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
-    layout = cr.read_layout_config("example.txt")
-    al.autolayout(layout)
-    gen.generate_html_layout(layout, "out.txt")
+    main()
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/

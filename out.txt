@@ -1,0 +1,713 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+        <style>
+    
+        .label1 {
+            color: black;
+            position: absolute;
+            top: 0%;
+            left: 0%;
+        }
+        .label2 {
+            color: black;
+            position: absolute;
+            top: 3%;
+            left: 0%;
+        }
+        .label3 {
+            color: black;
+            position: absolute;
+            top: 6%;
+            left: 0%;
+        }
+        .label4 {
+            color: black;
+            position: absolute;
+            top: 9%;
+            left: 0%;
+        }
+        .label5 {
+            color: black;
+            position: absolute;
+            top: 12%;
+            left: 0%;
+        }
+        .label6 {
+            color: black;
+            position: absolute;
+            top: 15%;
+            left: 0%;
+        }
+        .label7 {
+            color: black;
+            position: absolute;
+            top: 18%;
+            left: 0%;
+        }
+        .label8 {
+            color: black;
+            position: absolute;
+            top: 21%;
+            left: 0%;
+        }
+        .label9 {
+            color: black;
+            position: absolute;
+            top: 24%;
+            left: 0%;
+        }
+        .label10 {
+            color: black;
+            position: absolute;
+            top: 27%;
+            left: 0%;
+        }
+        .label11 {
+            color: black;
+            position: absolute;
+            top: 30%;
+            left: 0%;
+        }
+        .label12 {
+            color: black;
+            position: absolute;
+            top: 33%;
+            left: 0%;
+        }
+        .label13 {
+            color: black;
+            position: absolute;
+            top: 36%;
+            left: 0%;
+        }
+        .label14 {
+            color: black;
+            position: absolute;
+            top: 39%;
+            left: 0%;
+        }
+        .label15 {
+            color: black;
+            position: absolute;
+            top: 42%;
+            left: 0%;
+        }
+        .label16 {
+            color: black;
+            position: absolute;
+            top: 45%;
+            left: 0%;
+        }
+        .label17 {
+            color: black;
+            position: absolute;
+            top: 48%;
+            left: 0%;
+        }
+        .label18 {
+            color: black;
+            position: absolute;
+            top: 51%;
+            left: 0%;
+        }
+        .label19 {
+            color: black;
+            position: absolute;
+            top: 54%;
+            left: 0%;
+        }
+        .label20 {
+            color: black;
+            position: absolute;
+            top: 57%;
+            left: 0%;
+        }
+        .label21 {
+            color: black;
+            position: absolute;
+            top: 60%;
+            left: 0%;
+        }
+        .label22 {
+            color: black;
+            position: absolute;
+            top: 63%;
+            left: 0%;
+        }
+        .label23 {
+            color: black;
+            position: absolute;
+            top: 66%;
+            left: 0%;
+        }
+        .label24 {
+            color: black;
+            position: absolute;
+            top: 69%;
+            left: 0%;
+        }
+        .label25 {
+            color: black;
+            position: absolute;
+            top: 72%;
+            left: 0%;
+        }
+        .label26 {
+            color: black;
+            position: absolute;
+            top: 75%;
+            left: 0%;
+        }
+        .label27 {
+            color: black;
+            position: absolute;
+            top: 78%;
+            left: 0%;
+        }
+        .label28 {
+            color: black;
+            position: absolute;
+            top: 81%;
+            left: 0%;
+        }
+        .label29 {
+            color: black;
+            position: absolute;
+            top: 84%;
+            left: 0%;
+        }
+        .label30 {
+            color: black;
+            position: absolute;
+            top: 87%;
+            left: 0%;
+        }
+        .label31 {
+            color: black;
+            position: absolute;
+            top: 90%;
+            left: 0%;
+        }
+        .label32 {
+            color: black;
+            position: absolute;
+            top: 93%;
+            left: 0%;
+        }
+        .label33 {
+            color: black;
+            position: absolute;
+            top: 96%;
+            left: 0%;
+        }
+        .label34 {
+            color: black;
+            position: absolute;
+            top: 99%;
+            left: 0%;
+        }
+        .label35 {
+            color: black;
+            position: absolute;
+            top: 102%;
+            left: 0%;
+        }
+        .label36 {
+            color: black;
+            position: absolute;
+            top: 105%;
+            left: 0%;
+        }
+        .label37 {
+            color: black;
+            position: absolute;
+            top: 108%;
+            left: 0%;
+        }
+        .label38 {
+            color: black;
+            position: absolute;
+            top: 111%;
+            left: 0%;
+        }
+        .label39 {
+            color: black;
+            position: absolute;
+            top: 114%;
+            left: 0%;
+        }
+        .label40 {
+            color: black;
+            position: absolute;
+            top: 117%;
+            left: 0%;
+        }
+        .label41 {
+            color: black;
+            position: absolute;
+            top: 120%;
+            left: 0%;
+        }
+        .label42 {
+            color: black;
+            position: absolute;
+            top: 123%;
+            left: 0%;
+        }
+        .label43 {
+            color: black;
+            position: absolute;
+            top: 126%;
+            left: 0%;
+        }
+        .label44 {
+            color: black;
+            position: absolute;
+            top: 129%;
+            left: 0%;
+        }
+        .label45 {
+            color: black;
+            position: absolute;
+            top: 132%;
+            left: 0%;
+        }
+        .label46 {
+            color: black;
+            position: absolute;
+            top: 135%;
+            left: 0%;
+        }
+        .label47 {
+            color: black;
+            position: absolute;
+            top: 138%;
+            left: 0%;
+        }
+        .label48 {
+            color: black;
+            position: absolute;
+            top: 141%;
+            left: 0%;
+        }
+        .label49 {
+            color: black;
+            position: absolute;
+            top: 144%;
+            left: 0%;
+        }
+        .label50 {
+            color: black;
+            position: absolute;
+            top: 147%;
+            left: 0%;
+        }
+        .label51 {
+            color: black;
+            position: absolute;
+            top: 150%;
+            left: 0%;
+        }
+        .label52 {
+            color: black;
+            position: absolute;
+            top: 153%;
+            left: 0%;
+        }
+        .label53 {
+            color: black;
+            position: absolute;
+            top: 156%;
+            left: 0%;
+        }
+        .label54 {
+            color: black;
+            position: absolute;
+            top: 159%;
+            left: 0%;
+        }
+        .label55 {
+            color: black;
+            position: absolute;
+            top: 162%;
+            left: 0%;
+        }
+        .label56 {
+            color: black;
+            position: absolute;
+            top: 165%;
+            left: 0%;
+        }
+        .label57 {
+            color: black;
+            position: absolute;
+            top: 168%;
+            left: 0%;
+        }
+        .label58 {
+            color: black;
+            position: absolute;
+            top: 171%;
+            left: 0%;
+        }
+        .label59 {
+            color: black;
+            position: absolute;
+            top: 174%;
+            left: 0%;
+        }
+        .label60 {
+            color: black;
+            position: absolute;
+            top: 177%;
+            left: 0%;
+        }
+        .label61 {
+            color: black;
+            position: absolute;
+            top: 180%;
+            left: 0%;
+        }
+        .label62 {
+            color: black;
+            position: absolute;
+            top: 183%;
+            left: 0%;
+        }
+        .label63 {
+            color: black;
+            position: absolute;
+            top: 186%;
+            left: 0%;
+        }
+        .label64 {
+            color: black;
+            position: absolute;
+            top: 189%;
+            left: 0%;
+        }
+        .label65 {
+            color: black;
+            position: absolute;
+            top: 192%;
+            left: 0%;
+        }
+        .label66 {
+            color: black;
+            position: absolute;
+            top: 195%;
+            left: 0%;
+        }
+        .label67 {
+            color: black;
+            position: absolute;
+            top: 198%;
+            left: 0%;
+        }
+        .label68 {
+            color: black;
+            position: absolute;
+            top: 201%;
+            left: 0%;
+        }
+        .label69 {
+            color: black;
+            position: absolute;
+            top: 204%;
+            left: 0%;
+        }
+        .label70 {
+            color: black;
+            position: absolute;
+            top: 207%;
+            left: 0%;
+        }
+        .label71 {
+            color: black;
+            position: absolute;
+            top: 210%;
+            left: 0%;
+        }
+        .label72 {
+            color: black;
+            position: absolute;
+            top: 213%;
+            left: 0%;
+        }
+        .label73 {
+            color: black;
+            position: absolute;
+            top: 216%;
+            left: 0%;
+        }
+        .label74 {
+            color: black;
+            position: absolute;
+            top: 219%;
+            left: 0%;
+        }
+        .label75 {
+            color: black;
+            position: absolute;
+            top: 222%;
+            left: 0%;
+        }
+        .label76 {
+            color: black;
+            position: absolute;
+            top: 225%;
+            left: 0%;
+        }
+        .label77 {
+            color: black;
+            position: absolute;
+            top: 228%;
+            left: 0%;
+        }
+        .label78 {
+            color: black;
+            position: absolute;
+            top: 231%;
+            left: 0%;
+        }
+        .label79 {
+            color: black;
+            position: absolute;
+            top: 234%;
+            left: 0%;
+        }
+        .label80 {
+            color: black;
+            position: absolute;
+            top: 237%;
+            left: 0%;
+        }
+        .label81 {
+            color: black;
+            position: absolute;
+            top: 240%;
+            left: 0%;
+        }
+        .label82 {
+            color: black;
+            position: absolute;
+            top: 243%;
+            left: 0%;
+        }
+        .label83 {
+            color: black;
+            position: absolute;
+            top: 246%;
+            left: 0%;
+        }
+        .label84 {
+            color: black;
+            position: absolute;
+            top: 249%;
+            left: 0%;
+        }
+        .label85 {
+            color: black;
+            position: absolute;
+            top: 252%;
+            left: 0%;
+        }
+        .label86 {
+            color: black;
+            position: absolute;
+            top: 255%;
+            left: 0%;
+        }
+        .label87 {
+            color: black;
+            position: absolute;
+            top: 258%;
+            left: 0%;
+        }
+        .label88 {
+            color: black;
+            position: absolute;
+            top: 261%;
+            left: 0%;
+        }
+        .label89 {
+            color: black;
+            position: absolute;
+            top: 264%;
+            left: 0%;
+        }
+        .label90 {
+            color: black;
+            position: absolute;
+            top: 267%;
+            left: 0%;
+        }
+        .label91 {
+            color: black;
+            position: absolute;
+            top: 270%;
+            left: 0%;
+        }
+        .label92 {
+            color: black;
+            position: absolute;
+            top: 273%;
+            left: 0%;
+        }
+        .label93 {
+            color: black;
+            position: absolute;
+            top: 276%;
+            left: 0%;
+        }
+        .label94 {
+            color: black;
+            position: absolute;
+            top: 279%;
+            left: 0%;
+        }
+        .label95 {
+            color: black;
+            position: absolute;
+            top: 282%;
+            left: 0%;
+        }
+        .label96 {
+            color: black;
+            position: absolute;
+            top: 285%;
+            left: 0%;
+        }
+        .label97 {
+            color: black;
+            position: absolute;
+            top: 288%;
+            left: 0%;
+        }
+        .label98 {
+            color: black;
+            position: absolute;
+            top: 291%;
+            left: 0%;
+        }
+        .label99 {
+            color: black;
+            position: absolute;
+            top: 294%;
+            left: 0%;
+        }
+        .label100 {
+            color: black;
+            position: absolute;
+            top: 297%;
+            left: 0%;
+        }
+        </style>
+        </head>
+        <body>
+    <p class="label1">Good text:))</p>
+<p class="label2">Good text:))</p>
+<p class="label3">Good text:))</p>
+<p class="label4">Good text:))</p>
+<p class="label5">Good text:))</p>
+<p class="label6">Good text:))</p>
+<p class="label7">Good text:))</p>
+<p class="label8">Good text:))</p>
+<p class="label9">Good text:))</p>
+<p class="label10">Good text:))</p>
+<p class="label11">Good text:))</p>
+<p class="label12">Good text:))</p>
+<p class="label13">Good text:))</p>
+<p class="label14">Good text:))</p>
+<p class="label15">Good text:))</p>
+<p class="label16">Good text:))</p>
+<p class="label17">Good text:))</p>
+<p class="label18">Good text:))</p>
+<p class="label19">Good text:))</p>
+<p class="label20">Good text:))</p>
+<p class="label21">Good text:))</p>
+<p class="label22">Good text:))</p>
+<p class="label23">Good text:))</p>
+<p class="label24">Good text:))</p>
+<p class="label25">Good text:))</p>
+<p class="label26">Good text:))</p>
+<p class="label27">Good text:))</p>
+<p class="label28">Good text:))</p>
+<p class="label29">Good text:))</p>
+<p class="label30">Good text:))</p>
+<p class="label31">Good text:))</p>
+<p class="label32">Good text:))</p>
+<p class="label33">Good text:))</p>
+<p class="label34">Good text:))</p>
+<p class="label35">Good text:))</p>
+<p class="label36">Good text:))</p>
+<p class="label37">Good text:))</p>
+<p class="label38">Good text:))</p>
+<p class="label39">Good text:))</p>
+<p class="label40">Good text:))</p>
+<p class="label41">Good text:))</p>
+<p class="label42">Good text:))</p>
+<p class="label43">Good text:))</p>
+<p class="label44">Good text:))</p>
+<p class="label45">Good text:))</p>
+<p class="label46">Good text:))</p>
+<p class="label47">Good text:))</p>
+<p class="label48">Good text:))</p>
+<p class="label49">Good text:))</p>
+<p class="label50">Good text:))</p>
+<p class="label51">Good text:))</p>
+<p class="label52">Good text:))</p>
+<p class="label53">Good text:))</p>
+<p class="label54">Good text:))</p>
+<p class="label55">Good text:))</p>
+<p class="label56">Good text:))</p>
+<p class="label57">Good text:))</p>
+<p class="label58">Good text:))</p>
+<p class="label59">Good text:))</p>
+<p class="label60">Good text:))</p>
+<p class="label61">Good text:))</p>
+<p class="label62">Good text:))</p>
+<p class="label63">Good text:))</p>
+<p class="label64">Good text:))</p>
+<p class="label65">Good text:))</p>
+<p class="label66">Good text:))</p>
+<p class="label67">Good text:))</p>
+<p class="label68">Good text:))</p>
+<p class="label69">Good text:))</p>
+<p class="label70">Good text:))</p>
+<p class="label71">Good text:))</p>
+<p class="label72">Good text:))</p>
+<p class="label73">Good text:))</p>
+<p class="label74">Good text:))</p>
+<p class="label75">Good text:))</p>
+<p class="label76">Good text:))</p>
+<p class="label77">Good text:))</p>
+<p class="label78">Good text:))</p>
+<p class="label79">Good text:))</p>
+<p class="label80">Good text:))</p>
+<p class="label81">Good text:))</p>
+<p class="label82">Good text:))</p>
+<p class="label83">Good text:))</p>
+<p class="label84">Good text:))</p>
+<p class="label85">Good text:))</p>
+<p class="label86">Good text:))</p>
+<p class="label87">Good text:))</p>
+<p class="label88">Good text:))</p>
+<p class="label89">Good text:))</p>
+<p class="label90">Good text:))</p>
+<p class="label91">Good text:))</p>
+<p class="label92">Good text:))</p>
+<p class="label93">Good text:))</p>
+<p class="label94">Good text:))</p>
+<p class="label95">Good text:))</p>
+<p class="label96">Good text:))</p>
+<p class="label97">Good text:))</p>
+<p class="label98">Good text:))</p>
+<p class="label99">Good text:))</p>
+<p class="label100">Good text:))</p>
+
+        </body>
+        </html>
+    
