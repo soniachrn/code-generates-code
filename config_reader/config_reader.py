@@ -1,6 +1,6 @@
 import yaml
 
-from interface import *
+from interface.interface import *
 
 
 def _get_config_yaml_root(input_yaml_file_path: str) -> dict:

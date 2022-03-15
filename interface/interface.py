@@ -1,5 +1,4 @@
 from enum import Enum
-import lorem
 
 
 DEFAULT_IMAGE_URL = 'https://artprojectsforkids.org/wp-content/uploads/2020/08/Elephant-recolor.jpg'
@@ -18,9 +17,9 @@ class Position(Enum):
 
 
 class Coordination:
-    def __init__(self, top, right):
+    def __init__(self, top, left):
         self.top = top
-        self.right = right
+        self.left = left
 
 
 class Node:
@@ -29,7 +28,7 @@ class Node:
         self.height = yaml_node.get('height', None)
         self.position = self._get_position(yaml_node.get('position', None))
         self.color = self._get_color(yaml_node.get('color', None))
-        self.coordination = None
+        self.coordination = Coordination(0,0)
 
     def _get_color(self, color):
         return color if color else 'black'
@@ -51,8 +50,7 @@ class Node:
         if position_str in positions:
             return positions[position_str]
         else:
-            print(f'Invalid node position {position_str}')
-            exit(1)
+            return None
 
 
 class Button(Node):
@@ -87,7 +85,7 @@ class Group(Node):
         elif key == 'textfield':
             return TextField(value)
         else:
-            print(f'Invalid interface config node {key}')
+            print('Invalid interface config node {key}')
             exit(1)
 
 
@@ -110,7 +108,7 @@ class Label(Node):
 
 class Text(Node):
     def __init__(self, yaml_node):
-        self.text = yaml_node.get('text', lorem.text())
+        self.text = yaml_node.get('text', 'Good text:))')
         super().__init__(yaml_node)
 
 
