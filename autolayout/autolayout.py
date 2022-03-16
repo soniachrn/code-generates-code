@@ -21,6 +21,9 @@ def count_shift_to_the_right(layout):
                 cnt += len(child.children)
             else:
                 cnt += 1
+        else:
+            if isinstance(child, Group):
+                cnt += count_shift_to_the_right(child)
     return cnt
 
 def layout_node(layout, top, left, shift, height):
@@ -38,7 +41,7 @@ def layout_node(layout, top, left, shift, height):
                 if child.position == Position.BOTTOM:
                     group_top += DOWN_SHIFT_PERCENTAGE
                 if child.position == Position.CENTER:
-                    group_left += shift / 2 # approximately in the center of block. TODO: recognize group center
+                    group_left += shift / 2 - shift / 4 # approximately in the center of block. TODO: recognize group center
                 if child.position == Position.UPPER_RIGHT: # 45 degrees rotation
                     group_top -= 3 * DOWN_SHIFT_PERCENTAGE / 2
                     group_left += shift / 2
@@ -55,21 +58,31 @@ def layout_node(layout, top, left, shift, height):
                 group_top += DOWN_SHIFT_PERCENTAGE
             curr_top = layout_node(child, top + group_top, left + group_left, shift, height)
             top += group_top + top - curr_top
+            if child.position and child.position == Position.TOP:
+                top += 2 * DOWN_SHIFT_PERCENTAGE
         else:
-            if isinstance(child, TextField): #border around textfield
+            if isinstance(child, TextField) or isinstance(child, Button): #border around
                 top += TEXTFIELD_BORDER
+            print('Top ' + str(top))
 
             if child.position:
                 if child.position == Position.RIGHT:
                     child.coordination.left = left + shift
+                    child.coordination.top = top
                 if child.position == Position.LEFT:
+                    print('Left')
+                    print(top)
                     child.coordination.left = left - shift
+                    child.coordination.top = top
                 if child.position == Position.TOP:
                     child.coordination.top = top - DOWN_SHIFT_PERCENTAGE
+                    child.coordination.left = left
                 if child.position == Position.BOTTOM:
                     child.coordination.top = top + DOWN_SHIFT_PERCENTAGE
+                    child.coordination.left = left
                 if child.position == Position.CENTER:
-                    child.coordination.left = left + (shift / 4)
+                    child.coordination.left = left + shift / 6
+                    child.coordination.top = top
                 if child.position == Position.UPPER_RIGHT:
                     child.coordination.top = top - 3 * DOWN_SHIFT_PERCENTAGE / 2
                     child.coordination.left = left + shift / 2
@@ -82,6 +95,10 @@ def layout_node(layout, top, left, shift, height):
                 if child.position == Position.LOWER_RIGHT:
                     child.coordination.top = top + 3 * DOWN_SHIFT_PERCENTAGE / 2
                     child.coordination.left = left + shift / 2
+                if child.position == Position.NATIVE:
+                    print('Native right ' + str(left))
+                    child.coordination.top = top
+                    child.coordination.left = left
             else:
                 child.coordination.left = left
                 child.coordination.top = top
@@ -122,6 +139,7 @@ def autolayout(layout):
     if right_shift:
         part = layout.width / right_shift
         shift = 100 * part / layout.width
+    print(shift)
     layout_node(layout, 0, 0, shift, layout.height)
     min_top, min_left = count_negative_coordinates(layout)
     print(min_top)

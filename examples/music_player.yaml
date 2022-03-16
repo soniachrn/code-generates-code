@@ -13,3 +13,6 @@ interface:
         height: 100
     - text:
         text: "Cats like music"
+    - button:
+        text: "Play"
+        color: "green"

@@ -43,8 +43,9 @@ class HTMLGenerator:
 
     def _generate_button(self, button):
         self.buttons += 1
+        print('In button')
         style = '''
-        .button{button_no} {
+        .button{button_no} {{
             background-color: {bg_color};
             border: none;
             color: {text_color};
@@ -57,12 +58,13 @@ class HTMLGenerator:
             position:absolute;
             top: {top}%;
             left: {left}%;
-        }'''.format(button_no=self.buttons,
-                    bg_color=button.bg_color,
+        }}'''.format(button_no=self.buttons,
+                    bg_color=button.color,
                     text_color=button.text_color,
                     top=button.coordination.top,
                     left=button.coordination.left)
 
+        print('In button2')
         body = '<button class="button{button_no}">{text}</button>'.format(button_no=self.buttons, text=button.text)
         self.styles.append(style)
         self.bodies.append(body)
