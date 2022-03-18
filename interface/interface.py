@@ -14,6 +14,7 @@ class Position(Enum):
     LOWER_LEFT = 7
     LOWER_RIGHT = 8
     CENTER = 9
+    NATIVE = 10
 
 
 class Coordination:
@@ -45,6 +46,7 @@ class Node:
             'lower left': Position.LOWER_LEFT,
             'lower right': Position.LOWER_RIGHT,
             'center': Position.CENTER,
+            'native': Position.NATIVE,
         }
 
         if position_str in positions:
@@ -56,6 +58,7 @@ class Node:
 class Button(Node):
     def __init__(self, yaml_node):
         self.text = yaml_node.get('text', 'Button')
+        self.text_color = 'black'
         super().__init__(yaml_node)
 
 

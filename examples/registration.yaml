@@ -10,3 +10,6 @@ interface:
     - text:
         text: "Password"
     - textfield
+    - button:
+        text: "Enter"
+        color: "green"
