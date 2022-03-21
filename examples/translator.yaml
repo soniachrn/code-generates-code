@@ -1,0 +1,76 @@
+interface:
+  width: 600
+  height: 1000
+  children:
+    - group:
+        position: top
+        children:
+            - group:
+                children:
+                    - text:
+                        position: left
+                        text: "НеЯндексПереводчик"
+                    - text:
+                        position: right
+                        text: "Текст"
+                    - text:
+                        position: right
+                        text: "Сайты"
+                    - text:
+                        position: right
+                        text: "Документы"
+                    - text:
+                        position: right
+                        text: "Картинки"
+    - image:
+        url: "https://i.postimg.cc/T1GBK4DR/2022-03-22-02-01-21.jpg"
+        width: 1000
+        height: 250
+    - group:
+        children:
+            - group:
+                children:
+                    - text:
+                        text: "Примеры использования"
+                    - image:
+                        url: "https://i.postimg.cc/R05dCnfm/2022-03-22-02-07-00.jpg"
+                        width: 400
+                        height: 50
+                    - text:
+                        text: "Я и сам когда-то занимался программированием."
+                    - text:
+                        text: "You know, I used to do a little coding myself."
+                        color: grey
+                    - text:
+                        text: "Выживание должно нейтрализовать программирование."
+                    - text:
+                        text: "Survival must cancel out programming."
+                        color: grey
+                    - text:
+                        text: "Там много математики и программирования."
+                    - text:
+                        text: "There's a lot of maths and coding goes into this."
+                        color: grey
+            - group:
+                position: right
+                children:
+                    - text:
+                        text: ""
+            - group:
+                children:
+                        - group:
+                            position: upper right
+                            children:
+                                - group:
+                                    position: right
+                                    children:
+                                        - group:
+                                            position: right
+                                            children:
+                                                - group:
+                                                    position: right
+                                                    children:
+                                                        - text:
+                                                            text: "Словарь"
+                                                        - text:
+                                                            text: "программирование сущ, средний род: programming, coding"
