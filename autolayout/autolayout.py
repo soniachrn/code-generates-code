@@ -21,9 +21,9 @@ def count_shift_to_the_right(layout):
                 cnt += len(child.children)
             else:
                 cnt += 1
-        else:
-            if isinstance(child, Group):
-                cnt += count_shift_to_the_right(child)
+
+        if isinstance(child, Group):
+            cnt += count_shift_to_the_right(child)
     return cnt
 
 def layout_node(layout, top, left, shift, height):
@@ -57,7 +57,7 @@ def layout_node(layout, top, left, shift, height):
             else:
                 group_top += DOWN_SHIFT_PERCENTAGE
             curr_top = layout_node(child, top + group_top, left + group_left, shift, height)
-            top += group_top + top - curr_top
+            # top += group_top + top - curr_top
             if child.position and child.position == Position.TOP:
                 top += 2 * DOWN_SHIFT_PERCENTAGE
         else:
@@ -69,6 +69,7 @@ def layout_node(layout, top, left, shift, height):
                 if child.position == Position.RIGHT:
                     child.coordination.left = left + shift
                     child.coordination.top = top
+                    left += shift
                 if child.position == Position.LEFT:
                     print('Left')
                     print(top)
@@ -104,6 +105,11 @@ def layout_node(layout, top, left, shift, height):
                 child.coordination.top = top
             if child.height:
                 top += 100 * child.height / height + OBJ_EXPENSES + 1
+        if isinstance(child, Text):
+            print("Label")
+            if (len(child.text) > 100):
+                print("Big numbers")
+                top += DOWN_SHIFT_PERCENTAGE
         if not child.position:
             top += DOWN_SHIFT_PERCENTAGE
     return top
