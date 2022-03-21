@@ -1,9 +1,11 @@
-# from interface import (
-#     Button,
-#     Group,
-#     Image,
-#     Interface,
-#     Label,
-#     Text,
-#     TextField,
-# )
+from interface.interface import (
+    Position,
+    Button,
+    Group,
+    Image,
+    Interface,
+    Label,
+    Text,
+    TextField,
+)
+
