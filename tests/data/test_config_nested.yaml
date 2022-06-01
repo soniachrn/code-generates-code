@@ -1,0 +1,11 @@
+interface:
+  width:  600
+  height: 400
+  children:
+    - group:
+        children:
+          - group:
+              children:
+                - label
+                    text: "me am so nested ..."
+

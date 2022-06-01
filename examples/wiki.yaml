@@ -1,0 +1,137 @@
+interface:
+  width: 600
+  height: 1000
+  children:
+    - group:
+        children:
+            - image:
+                url: "https://argumentiru.com/images/arhnews/502481.jpg"
+                width: 120
+                height: 105
+            - text:
+                text: "Заглавная страница"
+                color: blue
+            - text:
+                text: "Содержание"
+                color: blue
+            - text:
+                text: "Избранные статьи"
+                color: blue
+            - text:
+                text: "Случайная статья"
+                color: blue
+            - text:
+                text: "Текущие события"
+                color: blue
+            - text:
+                text: "Пожертвовать"
+                color: blue
+            - text:
+                text: "Участие"
+                color: grey
+            - text:
+                text: "Сообщить об ошибке"
+                color: blue
+            - text:
+                text: "Как править статьи"
+                color: blue
+            - text:
+                text: "Сообщество"
+                color: blue
+            - text:
+                text: "Форум"
+                color: blue
+            - text:
+                text: "Свежие правки"
+                color: blue
+            - text:
+                text: "Новые страницы"
+                color: blue
+            - text:
+                text: "Справка"
+                color: blue
+            - text:
+                text: "Инструменты"
+                color: grey
+            - text:
+                text: "Ссылки сюда"
+                color: blue
+            - text:
+                text: "Связанные правки"
+                color: blue
+            - text:
+                text: "Служебные страницы"
+                color: blue
+            - text:
+                text: "Постоянная ссылка"
+                color: blue
+            - text:
+                text: "Сведения о странице"
+                color: blue
+            - text:
+                text: "Цитировать страницу"
+                color: blue
+            - text:
+                text: "Печать/экспорт"
+                color: grey
+            - text:
+                text: "Создать книгу"
+                color: blue
+            - text:
+                text: "Скачать как PDF"
+                color: blue
+            - text:
+                text: "Версия для печати"
+                color: blue
+            - text:
+                text: "В других проектах"
+                color: grey
+            - text:
+                text: "Викисклад"
+                color: blue
+            - text:
+                text: "Викиновости"
+                color: blue
+            - text:
+                text: "Викицитатник"
+                color: blue
+            - text:
+                text: "Элемент Викиданных"
+                color: blue
+    - group:
+        position: right
+        children:
+            - group:
+                children:
+                    - text:
+                        position: center
+                        text: "Статья"
+                    - text:
+                        position: right
+                        text: "Обсуждение"
+                    - text:
+                        position: right
+                        text: "Читать"
+                    - text:
+                        position: right
+                        text: "Текущая версия"
+            - group:
+                position: bottom
+                children:
+                - text:
+                    text: "Компьютер"
+                    color: blue
+                - text:
+                    text: "Материалы взяты из Википедии - свободной энциклопедии"
+                    color: grey
+                - text:
+                    text: "Компью́тер (англ. computer, МФА: [kəmˈpjuː.tə(ɹ)][1] — «вычислитель», от лат. computare — считать, вычислять[2]) — устройство или система, способная автоматически выполнять заданную, изменяемую последовательность операций.
+
+Это чаще всего операции численных расчётов и манипулирования данными, однако сюда относятся и операции ввода-вывода. Описание последовательности операций называется программой[3].
+
+Компьютерная система — любое устройство или группа взаимосвязанных или смежных устройств, одно или более из которых, действуя в соответствии с программой, осуществляет автоматизированную обработку данных[4]"
+                - image:
+                    position: bottom
+                    url: "https://cdn-front.kwork.ru/pics/t3/46/2153044-1565707346.jpg"
+                    width: 500
+                    height: 400

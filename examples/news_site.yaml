@@ -1,0 +1,30 @@
+interface:
+  width: 600
+  height: 1000
+  children:
+    - group:
+        position: top
+        children:
+        - text:
+            text: "Topics"
+            position: left
+        - text:
+            position: center
+            text: "About Us"
+        - text:
+            position: right
+            text: "Contacts"
+    - group:
+        position: left
+        children:
+        - text:
+            text: "Internation news"
+        - text:
+            text: "Russian news"
+        - text:
+            text: "Radio"
+    - group:
+        position: lower right
+        children:
+        - text:
+            text: "News is information about current events. This may be provided through many different media: word of mouth, printing, postal systems, broadcasting, electronic communication, or through the testimony of observers and witnesses to events. News is sometimes called \"hard news\" to differentiate it from soft media."

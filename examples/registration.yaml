@@ -1,0 +1,15 @@
+interface:
+  width: 600
+  height: 1000
+  children:
+    - text:
+        text: Registration
+    - text:
+        text: "Login"
+    - textfield
+    - text:
+        text: "Password"
+    - textfield
+    - button:
+        text: "Enter"
+        color: "green"

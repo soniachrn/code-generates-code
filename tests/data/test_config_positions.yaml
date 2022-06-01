@@ -1,0 +1,32 @@
+interface:
+  width: 600
+  height: 100
+  children:
+    - text:
+        position: top
+        text: top
+    - text:
+        position: bottom
+        text: bottom
+    - text:
+        position: left
+        text: left
+    - text:
+        position: right
+        text: right
+    - text:
+        position: center
+        text: center
+    - text:
+        position: upper left
+        text: upper left
+    - text:
+        position: upper right
+        text: upper right
+    - text:
+        position: lower left
+        text: lower left
+    - text:
+        position: lower right
+        text: lower right
+
